@@ -40,10 +40,10 @@ export default (
       }}
     />
     <Route
-      path="/markets"
+      path="/routes"
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Post/pages/PostDetailPage/PostDetailPage').default);
+          cb(null, require('./modules/LoopRoute/pages/RouteResultPage').default);
         });
       }}
     />
