@@ -40,6 +40,14 @@ export default (
       }}
     />
     <Route
+      path="/route-planner"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/LoopRoute/pages/RouteInputPage').default);
+        });
+      }}
+    />
+    <Route
       path="/routes"
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
