@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 let WaypointResult = (props) => {
-  console.log('waypoint props: ', props);
+  // console.log('waypoint props: ', props);
   return (
     <div className='waypoint-result'>
       <div className='location-container origin-container'>

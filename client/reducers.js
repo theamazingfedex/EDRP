@@ -7,7 +7,7 @@ import { combineReducers } from 'redux';
 import app from './modules/App/AppReducer';
 import posts from './modules/Post/PostReducer';
 import intl from './modules/Intl/IntlReducer';
-import routes from './modules/LoopRoute/LoopRouteReducer';
+import routes from './modules/LoopRoute/WaypointReducer';
 
 // Combine all reducers into one root reducer
 export default combineReducers({

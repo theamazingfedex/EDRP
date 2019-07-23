@@ -94,7 +94,7 @@ module.exports = {
 
   plugins: [
     new webpack.HotModuleReplacementPlugin({
-      requestTimeout: 500
+      requestTimeout: 1000
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
